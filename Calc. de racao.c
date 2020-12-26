@@ -1,14 +1,17 @@
 
 #include <stdio.h>
 
-int main ()
-{
+int main() {
+
         int tipo;
         int tam;
         int fin;
 
-        printf("Ola. Obrigado por vir!\n"); /* boas vindas para prender a atenção*/
-        printf("O seu animal de estimacao e gato ou cachorro?\nDigite 1 para Cachorro e 2 para gato\n");
+
+do{ // adicionando retorno pro começo do codigo
+
+        printf("Olá. Obrigado por vir!\n"); /* boas vindas para prender a atenção*/
+        printf("O seu animal de estimacao é gato ou cachorro?\nDigite 1 para Cachorro e 2 para gato\n");
         scanf("%i", &tipo); 
 
     if (tipo == 1) /*caso seja cachorro*/
@@ -55,7 +58,8 @@ int main ()
 
     printf("Muito obrigado por usar a calculadora de racao!\nDigite 5 para finalizar o programa\n");
     scanf ("%i", &fin);
-    if (fin == 5)
+    // adicionando o retorno pro começo do codigo
+}while (fin!=5);
         printf("FIM");
 
     return 0;
